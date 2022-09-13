@@ -1,0 +1,228 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.2;
+}
+
+.contenedor{
+    margin: 0 auto;
+    max-width: 100rem;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2 , h3, h4, p, a{
+    margin: 0;
+    padding: 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+/* CONTENIDO HEADER */
+
+  .principal{
+    display: flex;
+    height: 30rem;
+    align-items: center;
+  }
+
+  .header-izquierda{
+    width: 50%;
+  }
+
+  .header-derecha{
+    width: 50%;
+  }
+
+  .header-derecha p{
+    font-weight: 600;
+    color: hsl(300, 43%, 22%);
+  }
+
+  .header-izquierda h1{
+    color: hsl(300, 43%, 22%);
+    width: 50%;
+    line-height: 2.7rem;
+    margin-bottom: 2rem;
+  }
+
+  .header-izquierda p{
+    width: 80%;
+    color: hsl(303, 10%, 53%);
+  }
+
+  .images-icon{
+    display: flex;
+  }
+
+  .images-icon img{
+    padding: 0 .3rem;
+  }
+
+  .caja{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 75%;
+    background-color: hsl(300, 24%, 96%);
+    padding: 1rem 0;
+    margin-bottom: .8rem;
+    border-radius: .5rem;
+  }
+
+.caja-left{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.caja-center{
+    display: flex;
+    justify-content: center;
+}
+
+.caja-right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* RESPONSIVO HEADER */
+
+      @media (max-width: 800px) {
+        .principal{
+          display: flex;
+          flex-direction: column;
+          height: auto;
+        }
+        .contenedor{
+          margin: 0 auto;
+          overflow: hidden;
+          width: 90%;
+        }
+        .header-izquierda{
+          width: 100%;
+          margin-top: 8rem;
+        }
+
+        .header-izquierda p{
+          margin-bottom: 4rem;
+        }
+
+        .header-derecha{
+          margin-bottom: 4rem;
+          width: 100%;
+        }
+
+        .header-izquierda h1,
+        .header-izquierda p
+        {
+          width: 100%;
+          text-align: center;
+        }
+        .caja{
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        }
+
+        .images-icon{
+          margin-bottom: 1rem;
+        }
+
+      }
+
+/* CONTENIDO TARJETA */
+
+.card-general{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    height: 22rem;
+}
+
+.flexbox-arriba{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.flexbox-centro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flexbox-abajo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.seccion{
+    background-color: hsl(300, 43%, 22%);
+    border-radius: .8rem;
+    padding: 3rem 2rem;
+}
+
+.seccion h2{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.seccion h3{
+    color: hsl(333, 80%, 67%);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.seccion p{
+    color: hsl(0, 0%, 100%);
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.card-descrip{
+    display: flex;
+    align-items: center;
+}
+
+.card-descrip img{
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+/* RESPONSIVO TARJETA */
+
+    @media (max-width: 800px) {
+      .card-general{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        height: auto;
+    }
+      
+    }
