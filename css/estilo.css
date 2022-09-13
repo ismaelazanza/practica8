@@ -11,6 +11,10 @@ body{
     font-family: 'League Spartan', sans-serif;
     font-size: 1.6rem;
     line-height: 1.2;
+    background-image: url(../images/bg-pattern-bottom-desktop.svg);
+    background-image: url(../images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .contenedor{
